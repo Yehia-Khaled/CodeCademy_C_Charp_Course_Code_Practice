@@ -1,4 +1,7 @@
-﻿namespace C__Lists
+﻿using System;
+using System.Collections.Generic;
+
+namespace C__Lists
 {
     internal class Program
     {
@@ -195,6 +198,18 @@
              1.
              This code has two issues.Fix each erroneous statement by changing the index it uses.
             */
+            List<double> marathons = new List<double>
+              {
+                144.07,
+                143.12,
+                146.73,
+                146.33
+              };
+
+            double futureWinner = marathons[0];
+            marathons[3] = 143.23;
+
+            Console.WriteLine("If you reached this point, there are no errors!");
 
         }
 
