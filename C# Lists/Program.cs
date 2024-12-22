@@ -162,7 +162,8 @@ namespace C__Lists
             1.
             The second for loop in the code is used to print out a bib for each runner. Replace it with a foreach loop that achieves the same objective.
             */
-            Console.WriteLine("Add commit to Git Repository");
+            Console.WriteLine("Add commit to Git Repository Locally");
+            Console.WriteLine("Add commit to Git Repository On GitHub website");
 
 
 
