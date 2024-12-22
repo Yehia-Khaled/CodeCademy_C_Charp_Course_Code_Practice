@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace C__Lists
 {
@@ -162,8 +163,26 @@ namespace C__Lists
             1.
             The second for loop in the code is used to print out a bib for each runner. Replace it with a foreach loop that achieves the same objective.
             */
-            Console.WriteLine("Add commit to Git Repository Locally");
-            Console.WriteLine("Add commit to Git Repository On GitHub website");
+            List<string> runners = new List<string> { "Jemima Sumgong", "Tiki Gelana", "Constantina Tomescu", "Mizuki Noguchi" };
+            Random rand = new Random();
+
+            Console.WriteLine("In reverse chronological order, the gold medalists are...");
+
+            // First loop
+            for (int i = 0; i < runners.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}: {runners[i]}");
+            }
+
+            Console.WriteLine("\nPrinting runner bibs...");
+
+            // Second loop
+            for (int i = 0; i < runners.Count; i++)
+            {
+                string name = runners[i].ToUpper();
+                int id = rand.Next(100, 1000);
+                Console.WriteLine($"{id} - {name}");
+            }
 
 
 
