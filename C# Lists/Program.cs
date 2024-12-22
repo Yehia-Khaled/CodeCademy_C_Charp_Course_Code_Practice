@@ -1,4 +1,7 @@
-﻿namespace C__Lists
+﻿using System;
+using System.Collections.Generic;
+
+namespace C__Lists
 {
     internal class Program
     {
@@ -221,6 +224,20 @@
             2.
             Loop through the topMarathons list and print each value to the console.
             */
+            List<double> marathons = new List<double>
+                {
+                144.07,
+                143.12,
+                146.73,
+                146.33
+                };
+
+            List<double> topMarathons = marathons.GetRange(0, 3);
+
+            foreach (double topMarathon in topMarathons)
+            {
+                Console.WriteLine($"Top Marthons = {topMarathon}");
+            }
 
 
         }
