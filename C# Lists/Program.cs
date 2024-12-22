@@ -177,9 +177,16 @@ namespace C__Lists
             Console.WriteLine("\nPrinting runner bibs...");
 
             // Second loop
-            for (int i = 0; i < runners.Count; i++)
+            //for (int i = 0; i < runners.Count; i++)
+            //{
+            //  string name = runners[i].ToUpper();
+            //  int id = rand.Next(100, 1000);
+            //  Console.WriteLine($"{id} - {name}");
+            //}
+            //Use Foreach loop for solution
+            foreach (string runner in runners)
             {
-                string name = runners[i].ToUpper();
+                string name = runner.ToUpper();
                 int id = rand.Next(100, 1000);
                 Console.WriteLine($"{id} - {name}");
             }
