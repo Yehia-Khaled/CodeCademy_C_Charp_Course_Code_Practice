@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace C__Lists
+﻿namespace C__Lists
 {
     internal class Program
     {
@@ -197,7 +194,7 @@ namespace C__Lists
              Checkpoint 1 Enabled
              1.
              This code has two issues.Fix each erroneous statement by changing the index it uses.
-            */
+            
             List<double> marathons = new List<double>
               {
                 144.07,
@@ -210,6 +207,21 @@ namespace C__Lists
             marathons[3] = 143.23;
 
             Console.WriteLine("If you reached this point, there are no errors!");
+            */
+
+            //9. Working with Ranges
+            /*Instructions
+            Checkpoint 1 Enabled
+            1.
+            Use GetRange() to get the first three elements in the marathons list.
+
+            Store the result in a new list variable called topMarathons.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Loop through the topMarathons list and print each value to the console.
+            */
+
 
         }
 
