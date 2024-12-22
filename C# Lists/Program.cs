@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace C__Lists
+﻿namespace C__Lists
 {
     internal class Program
     {
@@ -162,7 +159,7 @@ namespace C__Lists
             Checkpoint 1 Enabled
             1.
             The second for loop in the code is used to print out a bib for each runner. Replace it with a foreach loop that achieves the same objective.
-            */
+            
             List<string> runners = new List<string> { "Jemima Sumgong", "Tiki Gelana", "Constantina Tomescu", "Mizuki Noguchi" };
             Random rand = new Random();
 
@@ -190,8 +187,14 @@ namespace C__Lists
                 int id = rand.Next(100, 1000);
                 Console.WriteLine($"{id} - {name}");
             }
+            */
 
-
+            //Accessing Out of Bounds
+            /* Instructions
+             Checkpoint 1 Enabled
+             1.
+             This code has two issues.Fix each erroneous statement by changing the index it uses.
+            */
 
         }
 
