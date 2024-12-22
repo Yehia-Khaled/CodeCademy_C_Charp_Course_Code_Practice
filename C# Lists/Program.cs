@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace C__Lists
+﻿namespace C__Lists
 {
     internal class Program
     {
@@ -223,7 +220,7 @@ namespace C__Lists
             Checkpoint 2 Step instruction is unavailable until previous steps are completed
             2.
             Loop through the topMarathons list and print each value to the console.
-            */
+            
             List<double> marathons = new List<double>
                 {
                 144.07,
@@ -238,6 +235,23 @@ namespace C__Lists
             {
                 Console.WriteLine($"Top Marthons = {topMarathon}");
             }
+            */
+
+            /*//10.Generic Collections
+            Instructions
+            Checkpoint 1 Enabled
+            1.
+            Add a reference to the System.Collections.Generic namespace.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Declare three empty lists:
+
+            one should hold bool types
+            one should hold Random types
+            one should hold IServiceProvider types
+            That’s right, interfaces work here too!
+            */
 
 
         }
