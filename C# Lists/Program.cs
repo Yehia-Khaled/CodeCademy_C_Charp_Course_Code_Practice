@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-
-namespace C__Lists
+﻿namespace C__Lists
 {
     internal class Program
     {
@@ -255,15 +251,21 @@ namespace C__Lists
             one should hold Random types
             one should hold IServiceProvider types
             That’s right, interfaces work here too!
-            */
+            
             // in the top of code page add
             //using System.Collections.Generic;
             // inside main add
             List<bool> boolsList = new List<bool>();
             List<Random> randomsList = new List<Random>();
             List<IServiceProvider> IservicesList = new List<IServiceProvider>();
+            */
 
-
+            //11.Review
+            /*Instructions
+            Checkpoint 1 Passed
+            1.
+            Add your city to the list, then use a foreach loop to print the whole list to the console.
+            */
         }
 
     }
