@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace C__Lists
+﻿namespace C__Lists
 {
     internal class Program
     {
@@ -268,14 +265,17 @@ namespace C__Lists
             Checkpoint 1 Passed
             1.
             Add your city to the list, then use a foreach loop to print the whole list to the console.
-            */
+            
             List<string> citiesList = new List<string> { "Delhi", "Los Angeles", "Saint Petersburg" };
             citiesList.Add("Cairo");
             foreach (string city in citiesList)
             {
                 Console.WriteLine($"Your City is {city}");
             }
+            */
 
+            //End of Lesson !
+            //Happy Coding!
         }
 
     }
