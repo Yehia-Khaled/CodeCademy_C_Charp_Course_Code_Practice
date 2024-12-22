@@ -1,4 +1,8 @@
-﻿namespace C__Lists
+﻿using System;
+using System.Collections.Generic;
+
+
+namespace C__Lists
 {
     internal class Program
     {
@@ -252,6 +256,12 @@
             one should hold IServiceProvider types
             That’s right, interfaces work here too!
             */
+            // in the top of code page add
+            //using System.Collections.Generic;
+            // inside main add
+            List<bool> boolsList = new List<bool>();
+            List<Random> randomsList = new List<Random>();
+            List<IServiceProvider> IservicesList = new List<IServiceProvider>();
 
 
         }
