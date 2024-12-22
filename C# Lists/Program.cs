@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Net.NetworkInformation;
-using System.Runtime.InteropServices.ComTypes;
-using System.Security.AccessControl;
-using System.Security.Cryptography;
-using System.Xml.Linq;
 
 namespace C__Lists
 {
@@ -168,11 +162,12 @@ namespace C__Lists
             1.
             The second for loop in the code is used to print out a bib for each runner. Replace it with a foreach loop that achieves the same objective.
             */
+            Console.WriteLine("Add commit to Git Repository");
 
 
 
         }
 
     }
-    
+
 }
