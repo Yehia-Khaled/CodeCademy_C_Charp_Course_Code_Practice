@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace _11.Methods_C_
+﻿namespace _11.Methods_C_
 {
     internal class Program
     {
@@ -37,7 +35,7 @@ namespace _11.Methods_C_
             Checkpoint 5 Step instruction is unavailable until previous steps are completed
             5.
             Print secondName to the console.
-            */
+            
             //Code Solution
             string designer = "Anders Hejlsberg";
             Console.WriteLine(designer);
@@ -47,8 +45,20 @@ namespace _11.Methods_C_
             string secondName = designer.Substring(indexOfSecondName);
 
             Console.WriteLine(secondName);
+            */
 
+            //3.Defining Methods
+            /*Instructions
+            Checkpoint 1 Enabled
+            1.
+            Define a method named VisitPlanets() outside of the Main() method and run the code.
 
+            VisitPlanets() can print anything you’d like to the console, but something like “You visited many new planets…” would be appropriate.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Why isn’t your method executed? It’s not called within Main().Call it in Main() and run the code again.
+            */
 
 
         }
