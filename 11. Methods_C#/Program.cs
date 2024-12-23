@@ -60,10 +60,31 @@ namespace _11.Methods_C_
             Checkpoint 2 Step instruction is unavailable until previous steps are completed
             2.
             Why isn’t your method executed? It’s not called within Main().Call it in Main() and run the code again.
-            */
+            
             //Code Solution
             VisitPlanets();
+            */
 
+            //4. Method Parameters
+            /*
+             * //Instructions
+             Checkpoint 1 Enabled
+             1.
+             The VisitPlanets() method has been re-written for you here.
+
+             Add an int parameter named numberOfPlanets to the method.
+                         Checkpoint 2 Step instruction is unavailable until previous steps are completed
+             2.
+             Change the method body so that it uses the parameter.If someone were to call your method, it should print how many planets they visited.For example, calling VisitPlanets(3) would cause this to be printed:
+
+             You visited 3 new planets...
+
+             Copy to Clipboard
+
+             Checkpoint 3 Step instruction is unavailable until previous steps are completed
+             3.
+             Call VisitPlanets() three times in Main() with different arguments.
+            */
 
 
         }
