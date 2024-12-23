@@ -1,4 +1,6 @@
-﻿namespace _11.Methods_C_
+﻿using System;
+
+namespace _11.Methods_C_
 {
     internal class Program
     {
@@ -59,8 +61,15 @@
             2.
             Why isn’t your method executed? It’s not called within Main().Call it in Main() and run the code again.
             */
+            //Code Solution
+            VisitPlanets();
 
 
+
+        }
+        static void VisitPlanets()
+        {
+            Console.WriteLine("You visited many new planets…");
         }
     }
 }
