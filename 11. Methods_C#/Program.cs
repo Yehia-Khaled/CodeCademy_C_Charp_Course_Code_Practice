@@ -1,4 +1,6 @@
-﻿namespace _11.Methods_C_
+﻿using System;
+
+namespace _11.Methods_C_
 {
     internal class Program
     {
@@ -36,6 +38,16 @@
             5.
             Print secondName to the console.
             */
+            //Code Solution
+            string designer = "Anders Hejlsberg";
+            Console.WriteLine(designer);
+            int indexOfSpace = designer.IndexOf(" ");
+            int indexOfSecondName = indexOfSpace + 1;
+
+            string secondName = designer.Substring(indexOfSecondName);
+
+            Console.WriteLine(secondName);
+
 
 
 
