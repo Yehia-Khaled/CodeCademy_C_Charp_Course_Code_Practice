@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace _11.Methods_C_
+﻿namespace _11.Methods_C_
 {
     internal class Program
     {
@@ -84,11 +82,42 @@ namespace _11.Methods_C_
              Checkpoint 3 Step instruction is unavailable until previous steps are completed
              3.
              Call VisitPlanets() three times in Main() with different arguments.
-            */
+            
             //Code Solution 
             VisitPlanets(3);
             VisitPlanets(6);
             VisitPlanets(10);
+            */
+
+            //5. Return Statement
+            /*Instructions
+             Checkpoint 1 Enabled
+             1.
+             Let’s define a static method DecoratePlanet() that takes a planet name as input and returns a fancy welcome message.
+
+             First, write the method declaration. It should have a string parameter and return a string.
+                         Note: A build error, error CS0161, at this step is notifying you that this method should return a string but does not. In the next step,
+                 you will add the required return statement to the method.
+
+             Checkpoint 2 Step instruction is unavailable until previous steps are completed
+             2.
+             Write the method body so that it returns a fancy welcome to the planet using string interpolation. For example, calling
+
+             DecoratePlanet("Mars");
+
+                         Copy to Clipboard
+
+                         returns:
+
+             "*.*.* Welcome to Mars *.*.*"
+
+             Copy to Clipboard
+
+             Checkpoint 3 Step instruction is unavailable until previous steps are completed
+             3.
+             Call the method with the argument "Jupiter" and print its output to the console.
+            */
+
 
         }
         /*
@@ -96,12 +125,13 @@ namespace _11.Methods_C_
         {
             Console.WriteLine("You visited many new planets…");
         }
-        */
+        
 
         //4. Method Parameters: Code Solution
         static void VisitPlanets(int numberOfPlanets)
         {
             Console.WriteLine($"You visited {numberOfPlanets} new planets...");
         }
+        */
     }
 }
