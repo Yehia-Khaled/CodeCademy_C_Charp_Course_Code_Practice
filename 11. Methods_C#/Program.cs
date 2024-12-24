@@ -85,12 +85,23 @@ namespace _11.Methods_C_
              3.
              Call VisitPlanets() three times in Main() with different arguments.
             */
-
+            //Code Solution 
+            VisitPlanets(3);
+            VisitPlanets(6);
+            VisitPlanets(10);
 
         }
+        /*
         static void VisitPlanets()
         {
             Console.WriteLine("You visited many new planets…");
+        }
+        */
+
+        //4. Method Parameters: Code Solution
+        static void VisitPlanets(int numberOfPlanets)
+        {
+            Console.WriteLine($"You visited {numberOfPlanets} new planets...");
         }
     }
 }
