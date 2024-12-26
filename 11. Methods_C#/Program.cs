@@ -116,11 +116,59 @@
              Checkpoint 3 Step instruction is unavailable until previous steps are completed
              3.
              Call the method with the argument "Jupiter" and print its output to the console.
-            */
+            
 
             //Code Solution
             Console.WriteLine(DecoratePlanet("Jupiter"));
-            //test git
+            */
+
+            //6. Method Overloading 
+            /*//Instructions
+            Checkpoint 1 Enabled
+            1.
+            Let’s practice implementing our own overloads by building a method called IntroduceFriends() with 3 overloads.
+
+            First write a method IntroduceFriends() that takes 2 string arguments.
+
+            If you call it, like:
+
+            IntroduceFriends("Laika", "Albert");
+
+                        Copy to Clipboard
+
+                        it should print a message including the names in the console, like:
+
+            These are my friends, Laika and Albert!
+
+            Copy to Clipboard
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Then write another method IntroduceFriends() that takes 3 string arguments. When you call it:
+
+            IntroduceFriends("Naomi", "Jasmine", "Cyrus");
+
+                        Copy to Clipboard
+
+                        it should print a message including the names in the console, like:
+
+            These are my friends, Naomi, Jasmine, and Cyrus!
+
+            Copy to Clipboard
+
+            Checkpoint 3 Step instruction is unavailable until previous steps are completed
+            3.
+            Add a third IntroduceFriends() method with 0 arguments.When you call it:
+
+            IntroduceFriends();
+                        Copy to Clipboard
+
+                        everyone knows each other, and no one needs an introduction!Print a message like:
+
+                        There is no one who needs to be introduced.
+            */
+
+
 
         }
         /*
@@ -135,11 +183,13 @@
         {
             Console.WriteLine($"You visited {numberOfPlanets} new planets...");
         }
-        */
+        
         //5. Return Statement: Code Solution
         static string DecoratePlanet(string planet)
         {
             return $"*..*..* Welcome to {planet} *..*..*";
         }
+        */
+
     }
 }
