@@ -118,6 +118,8 @@
              Call the method with the argument "Jupiter" and print its output to the console.
             */
 
+            //Code Solution
+            Console.WriteLine(DecoratePlanet("Jupiter"));
 
         }
         /*
@@ -133,5 +135,10 @@
             Console.WriteLine($"You visited {numberOfPlanets} new planets...");
         }
         */
+        //5. Return Statement: Code Solution
+        static string DecoratePlanet(string planet)
+        {
+            return $"*..*..* Welcome to {planet} *..*..*";
+        }
     }
 }
