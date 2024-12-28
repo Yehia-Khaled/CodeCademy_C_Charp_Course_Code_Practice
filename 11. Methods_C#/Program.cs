@@ -1,4 +1,6 @@
-﻿namespace _11.Methods_C_
+﻿using System;
+
+namespace _11.Methods_C_
 {
     internal class Program
     {
@@ -253,6 +255,8 @@
             Call the method without the optional parameter in Main().
             */
 
+            //Code Solution
+            VisitPlanets();
 
         }
         /*
@@ -295,6 +299,10 @@
             return phrase.ToLower();
         }
         */
-
+        //8. Optional Parameters: Code Solution
+        static void VisitPlanets(int numberOfPlanets = 0)
+        {
+            Console.WriteLine($"You visited {numberOfPlanets} new planets...");
+        }
     }
 }
