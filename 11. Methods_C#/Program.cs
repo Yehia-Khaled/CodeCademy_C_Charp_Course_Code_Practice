@@ -168,12 +168,77 @@ namespace _11.Methods_C_
                         everyone knows each other, and no one needs an introduction!Print a message like:
 
                         There is no one who needs to be introduced.
-            */
+            
             // Code Solution
-
             IntroduceFriends("Laika", "Albert");
             IntroduceFriends("Laika", "Albert", "Hany");
             IntroduceFriends();
+            */
+
+            //7. Out Parameters
+            /*
+             * //Instructions
+            Checkpoint 1 Enabled
+            1.
+            Let’s start by working with another existing method that utilizes an out parameter, Double.TryParse().
+
+            The program in the code editor already defines a variable called scoreAsString, which holds a score(out of 100) as a string.
+
+            To begin, define 2 variables:
+
+                        a bool named outcome, which will store whether or not the string was successfully parsed as a double
+                        a double named scoreAsDouble, which will store the parsed value
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Next, call Double.TryParse() to convert scoreAsString to a double, passing scoreAsDouble as the out argument.Save the result of the function call to the variable outcome.
+
+            The signature for Double.TryParse() looks like:
+
+            public static bool TryParse(string? s, out double result);
+
+                        Copy to Clipboard
+
+                        Checkpoint 3 Step instruction is unavailable until previous steps are completed
+            3.
+            Print outcome and scoreAsDouble to the console.
+
+            Checkpoint 4 Step instruction is unavailable until previous steps are completed
+            4.
+            Now, let’s create a method of our own that uses an out parameter!
+
+            Declare a method Whisper() with a string parameter and out bool parameter. It should return a string.
+
+            Checkpoint 5 Step instruction is unavailable until previous steps are completed
+            5.
+            Whisper() should return a lowercase version of its string argument.
+
+            Once defined, you should be able to call it like:
+
+                        string statement = "Hello World";
+                        Whisper(statement, out bool marker);
+                        // should return  "hello world" and set marker to true;
+
+                        Copy to Clipboard
+
+                        Checkpoint 6 Step instruction is unavailable until previous steps are completed
+            6.
+            Call Whisper() in the Main() method, passing statement as its string argument, then print the returned value to the console.
+
+            Make sure to use an out modifier when calling the method!
+            */
+            //Code Solution
+            string scoreAsString = "85.6";
+            string statement = "Hello World";
+
+            double scoreAsDouble;
+            bool outcome;
+
+            outcome = Double.TryParse(scoreAsString, out scoreAsDouble);
+
+            Console.WriteLine($"{outcome}, {scoreAsDouble}");
+
+            string whispered = Whisper(statement, out bool marker);
+            Console.WriteLine(whispered);
 
         }
         /*
@@ -194,7 +259,7 @@ namespace _11.Methods_C_
         {
             return $"*..*..* Welcome to {planet} *..*..*";
         }
-        */
+        
         //6. Method Overloading:Code
         static void IntroduceFriends(string st1, string st2)
         {
@@ -207,6 +272,13 @@ namespace _11.Methods_C_
         static void IntroduceFriends()
         {
             Console.WriteLine($"There is no one who needs to be introduced.");
+        }
+        */
+        //7. Out Parameters: Code Solution
+        static string Whisper(string phrase, out bool wasWhisperCalled)
+        {
+            wasWhisperCalled = true;
+            return phrase.ToLower();
         }
 
     }
