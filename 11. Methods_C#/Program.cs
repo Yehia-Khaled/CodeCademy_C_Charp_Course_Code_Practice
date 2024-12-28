@@ -1,4 +1,6 @@
-﻿namespace _11.Methods_C_
+﻿using System;
+
+namespace _11.Methods_C_
 {
     internal class Program
     {
@@ -274,8 +276,10 @@
             3.
             Call the method one more time, this time passing numberOfPlanets with a value of 2 and name with your name.Both arguments should be passed by name.
             */
-
-
+            //Code Solution
+            VisitPlanets(numberOfPlanets: 2);
+            Console.WriteLine("\n\n");
+            VisitPlanets(numberOfPlanets: 2, name: "Yehia");
 
         }
         /*
@@ -324,5 +328,16 @@
             Console.WriteLine($"You visited {numberOfPlanets} new planets...");
         }
         */
+        //9. Named Arguments:Code Solution
+        static void VisitPlanets(
+         string adjective = "brave",
+         string name = "Cosmonaut",
+         int numberOfPlanets = 0,
+         double gForce = 4.2)
+        {
+            Console.WriteLine($"Welcome back, {adjective} {name}.");
+            Console.WriteLine($"You visited {numberOfPlanets} new planets...");
+            Console.WriteLine($"...while experiencing a g-force of {gForce} g!");
+        }
     }
 }
