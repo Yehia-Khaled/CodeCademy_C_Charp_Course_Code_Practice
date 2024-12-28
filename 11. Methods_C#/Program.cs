@@ -1,4 +1,6 @@
-﻿namespace _11.Methods_C_
+﻿using System;
+
+namespace _11.Methods_C_
 {
     internal class Program
     {
@@ -167,8 +169,11 @@
 
                         There is no one who needs to be introduced.
             */
+            // Code Solution
 
-
+            IntroduceFriends("Laika", "Albert");
+            IntroduceFriends("Laika", "Albert", "Hany");
+            IntroduceFriends();
 
         }
         /*
@@ -190,6 +195,19 @@
             return $"*..*..* Welcome to {planet} *..*..*";
         }
         */
+        //6. Method Overloading:Code
+        static void IntroduceFriends(string st1, string st2)
+        {
+            Console.WriteLine($"These are my friends, {st1} and {st2}!");
+        }
+        static void IntroduceFriends(string st1, string st2, string st3)
+        {
+            Console.WriteLine($"These are my friends, {st1} ,{st3} and {st3}!");
+        }
+        static void IntroduceFriends()
+        {
+            Console.WriteLine($"There is no one who needs to be introduced.");
+        }
 
     }
 }
