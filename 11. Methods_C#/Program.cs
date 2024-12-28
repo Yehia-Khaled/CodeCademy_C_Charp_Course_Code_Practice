@@ -283,10 +283,10 @@ namespace _11.Methods_C_
             */
             //10. Review
             /*
-              an override of IntroducePet that accepts
-              an integer "age", which is incorporated into
-              a more detailed output string
-            */
+              //an override of IntroducePet that accepts
+              //an integer "age", which is incorporated into
+              //a more detailed output string
+           
             // IntroducePet called with one argument
             // "petType" parameter defaults to "cat"
             string mittensIntro = IntroducePet("Mittens");
@@ -303,6 +303,8 @@ namespace _11.Methods_C_
             // using the override with "int age"
             string berthaIntro = IntroducePet("Bertha", 7, "cow");
             Console.WriteLine(berthaIntro);
+            */
+            Console.WriteLine("End Of lesson");
 
         }
         /*
@@ -362,14 +364,14 @@ namespace _11.Methods_C_
             Console.WriteLine($"You visited {numberOfPlanets} new planets...");
             Console.WriteLine($"...while experiencing a g-force of {gForce} g!");
         }
-        */
+        
         //10. Review:Code Solution
         static string IntroducePet(string name, int age, string petType = "cat")
         {
             string introduction = $"This is my {petType}, {name}! {name} is {age} years old!";
             return introduction;
         }
-
+        */
 
 
 
