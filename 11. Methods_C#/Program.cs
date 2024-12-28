@@ -275,11 +275,34 @@ namespace _11.Methods_C_
             Checkpoint 3 Step instruction is unavailable until previous steps are completed
             3.
             Call the method one more time, this time passing numberOfPlanets with a value of 2 and name with your name.Both arguments should be passed by name.
-            */
+            
             //Code Solution
             VisitPlanets(numberOfPlanets: 2);
             Console.WriteLine("\n\n");
             VisitPlanets(numberOfPlanets: 2, name: "Yehia");
+            */
+            //10. Review
+            /*
+              an override of IntroducePet that accepts
+              an integer "age", which is incorporated into
+              a more detailed output string
+            */
+            // IntroducePet called with one argument
+            // "petType" parameter defaults to "cat"
+            string mittensIntro = IntroducePet("Mittens");
+            Console.WriteLine(mittensIntro);
+
+            // a positional argument is passed to "petType"
+            string franklinIntro = IntroducePet("Franklin", "turtle");
+            Console.WriteLine(franklinIntro);
+
+            // a named argument is passed for "petType"
+            string spotIntro = IntroducePet("Spot", petType: "dog");
+            Console.WriteLine(spotIntro);
+
+            // using the override with "int age"
+            string berthaIntro = IntroducePet("Bertha", 7, "cow");
+            Console.WriteLine(berthaIntro);
 
         }
         /*
@@ -327,7 +350,7 @@ namespace _11.Methods_C_
         {
             Console.WriteLine($"You visited {numberOfPlanets} new planets...");
         }
-        */
+        
         //9. Named Arguments:Code Solution
         static void VisitPlanets(
          string adjective = "brave",
@@ -339,5 +362,16 @@ namespace _11.Methods_C_
             Console.WriteLine($"You visited {numberOfPlanets} new planets...");
             Console.WriteLine($"...while experiencing a g-force of {gForce} g!");
         }
+        */
+        //10. Review:Code Solution
+        static string IntroducePet(string name, int age, string petType = "cat")
+        {
+            string introduction = $"This is my {petType}, {name}! {name} is {age} years old!";
+            return introduction;
+        }
+
+
+
+
     }
 }
