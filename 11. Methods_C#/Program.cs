@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace _11.Methods_C_
+﻿namespace _11.Methods_C_
 {
     internal class Program
     {
@@ -253,10 +251,31 @@ namespace _11.Methods_C_
             Checkpoint 2 Step instruction is unavailable until previous steps are completed
             2.
             Call the method without the optional parameter in Main().
-            */
+            
 
             //Code Solution
             VisitPlanets();
+            */
+
+            //9. Named Arguments
+            /*
+             * Instructions
+            Checkpoint 1 Enabled
+            1.
+            The VisitPlanets() method has some new optional parameters.
+
+            First, call the method in Main() with no arguments.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Call the method again, but pass only numberOfPlanets as a named argument with a value of 2.
+
+            Checkpoint 3 Step instruction is unavailable until previous steps are completed
+            3.
+            Call the method one more time, this time passing numberOfPlanets with a value of 2 and name with your name.Both arguments should be passed by name.
+            */
+
+
 
         }
         /*
@@ -298,11 +317,12 @@ namespace _11.Methods_C_
             wasWhisperCalled = true;
             return phrase.ToLower();
         }
-        */
+        
         //8. Optional Parameters: Code Solution
         static void VisitPlanets(int numberOfPlanets = 0)
         {
             Console.WriteLine($"You visited {numberOfPlanets} new planets...");
         }
+        */
     }
 }
