@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Server;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace _12.IntroToClasses_CSharp
 {
@@ -109,7 +112,47 @@ namespace _12.IntroToClasses_CSharp
             NOTE: As in the example in the narrative, adding this here does not change how the code works.
             */
 
+            //6. Constructors
+            /*
+            Instructions
+            Checkpoint 1 Enabled
+            1.
+            Define a constructor for the Forest class. It should take two parameters:
 
+            name
+            biome
+            Within the constructor body, the argument values should be assigned to the instance variables of the same name.It should also set the value of age to 1.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            The code in Program.cs has been commented out. Uncomment it and run it.
+
+            You should see an error:
+
+            error CS7036: There is no argument given that corresponds to the required formal parameter 'name' of 'Forest.Forest(string, string)' 
+
+            Copy to Clipboard
+
+            This error occurs because you are using the parameterless constructor Forest() in Program.cs.This no longer works because a constructor Forest(string, string) has been defined.
+
+            Checkpoint 3 Step instruction is unavailable until previous steps are completed
+            3.
+            Call the new constructor in Main() to create a Forest object with the name "Congo" and biome "Tropical".
+
+            You can also delete the following lines:
+
+            f.name = "Congo";
+
+            Copy to Clipboard
+
+            and
+
+            f.biome = "Tropical";
+
+            Copy to Clipboard
+
+            These are no longer needed because those fields are now set by the constructor!
+            */
 
 
 
