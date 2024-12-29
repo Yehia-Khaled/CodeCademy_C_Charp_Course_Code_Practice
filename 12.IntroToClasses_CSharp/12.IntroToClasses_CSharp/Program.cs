@@ -88,6 +88,14 @@ namespace _12.IntroToClasses_CSharp
             decrease the trees field by 20 and increase the age property by 1
             return the updated number of trees
             */
+            //Code Solution
+            Forest f = new Forest();
+            f.name = "Congo";
+            f.trees = 0;
+            f.age = 0;
+            f.biome = "Tropical";
+
+            Console.WriteLine(f.name);
 
 
 

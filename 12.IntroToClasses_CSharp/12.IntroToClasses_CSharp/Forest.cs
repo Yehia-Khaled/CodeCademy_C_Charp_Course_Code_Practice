@@ -13,5 +13,19 @@ namespace _12.IntroToClasses_CSharp
 
         public int trees;
         public int age;
+        //4. Methods Code Solution
+        public int Grow()
+        {
+            trees += 30;
+            age++;
+            return trees;
+        }
+        public int Burn()
+        {
+            trees -= 20;
+            age++;
+            return trees;
+        }
+
     }
 }
