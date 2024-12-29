@@ -87,7 +87,7 @@ namespace _12.IntroToClasses_CSharp
             take zero arguments
             decrease the trees field by 20 and increase the age property by 1
             return the updated number of trees
-            */
+            
             //Code Solution
             Forest f = new Forest();
             f.name = "Congo";
@@ -96,6 +96,19 @@ namespace _12.IntroToClasses_CSharp
             f.biome = "Tropical";
 
             Console.WriteLine(f.name);
+            */
+
+            //5. this
+            /*Instructions
+            Checkpoint 1 Enabled
+            1.
+            Take a look at the Grow() method we worked on in the previous exercise.
+
+            For each instance variable that is used within the method body, add the this keyword to specify that it refers to the instance variable.
+
+            NOTE: As in the example in the narrative, adding this here does not change how the code works.
+            */
+
 
 
 
