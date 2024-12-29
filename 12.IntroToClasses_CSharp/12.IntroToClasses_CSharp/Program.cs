@@ -17,6 +17,22 @@ namespace _12.IntroToClasses_CSharp
                 NOTE: Testing this kind of code takes longer, so some checkpoints in this lesson will need more time to run.It’s worth the wait!
             */
 
+            //2. Defining Classes
+            /*
+             * Instructions
+            Checkpoint 1 Enabled
+            1.
+            We will define our class in Forest.cs and work with that class in the Main() method in Program.cs.
+
+            Within the namespace DefiningClasses, build an empty Forest class in Forest.cs.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            In Main() within Program.cs, make a new instance of the Forest class and store the result in variable f.
+            */
+
+
+
         }
     }
 }
