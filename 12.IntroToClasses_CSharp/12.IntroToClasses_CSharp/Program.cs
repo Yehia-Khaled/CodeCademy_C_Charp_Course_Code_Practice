@@ -60,8 +60,7 @@ namespace _12.IntroToClasses_CSharp
             Checkpoint 3 Step instruction is unavailable until previous steps are completed
             3.
             In Main(), print the name field to the console.
-            */
-
+            
             //Code Solution
             Forest f = new Forest();
             f.name = "Test";
@@ -70,6 +69,27 @@ namespace _12.IntroToClasses_CSharp
             f.trees = 3;
             f.age = 5;
             Console.WriteLine($"Tree name is {f.name}");
+            */
+
+            //4. Methods
+            /*Instructions
+            Checkpoint 1 Enabled
+            1.
+            In the Forest class, define a public method Grow(). It should:
+
+            take zero arguments
+            increase the trees property by 30 and the age property by 1
+            return the updated number of trees
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Define a public method Burn(). It should:
+
+            take zero arguments
+            decrease the trees field by 20 and increase the age property by 1
+            return the updated number of trees
+            */
+
+
 
 
         }
