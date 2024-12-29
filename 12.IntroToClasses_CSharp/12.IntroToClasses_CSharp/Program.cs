@@ -62,6 +62,14 @@ namespace _12.IntroToClasses_CSharp
             In Main(), print the name field to the console.
             */
 
+            //Code Solution
+            Forest f = new Forest();
+            f.name = "Test";
+            f.biome = "Palm";
+
+            f.trees = 3;
+            f.age = 5;
+            Console.WriteLine($"Tree name is {f.name}");
 
 
         }
