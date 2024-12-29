@@ -30,7 +30,8 @@ namespace _12.IntroToClasses_CSharp
             2.
             In Main() within Program.cs, make a new instance of the Forest class and store the result in variable f.
             */
-
+            //Code Solution
+            Forest f = new Forest();
 
 
         }
