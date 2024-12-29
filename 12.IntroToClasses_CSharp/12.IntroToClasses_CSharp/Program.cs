@@ -29,9 +29,39 @@ namespace _12.IntroToClasses_CSharp
             Checkpoint 2 Step instruction is unavailable until previous steps are completed
             2.
             In Main() within Program.cs, make a new instance of the Forest class and store the result in variable f.
-            */
+
             //Code Solution
             Forest f = new Forest();
+            */
+
+            //3. Fields
+            /*
+             * Instructions
+            Checkpoint 1 Enabled
+            1.
+            In Forest.cs, add 4 fields to the Forest class.
+
+            2 fields of type string:
+
+            name
+            biome
+            2 fields of type int:
+
+            trees
+            age
+            Include the public keyword before each field’s type declaration.
+
+            NOTE: at this point, the compiler will throw several warnings indicating that these fields are declared but never assigned values. Do not worry, we will address this in the next step!
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            In Program.cs, within Main(), a Forest object has already been instantiated. Set values for each of the 4 fields.
+
+            Checkpoint 3 Step instruction is unavailable until previous steps are completed
+            3.
+            In Main(), print the name field to the console.
+            */
+
 
 
         }
