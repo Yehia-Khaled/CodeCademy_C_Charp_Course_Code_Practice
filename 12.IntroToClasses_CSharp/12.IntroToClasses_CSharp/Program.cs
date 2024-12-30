@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
+using System.Reflection;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
@@ -152,7 +154,7 @@ namespace _12.IntroToClasses_CSharp
             Copy to Clipboard
 
             These are no longer needed because those fields are now set by the constructor!
-            */
+            
 
             //Code Solution
             Forest f = new Forest("Congo", "Tropical");
@@ -161,7 +163,27 @@ namespace _12.IntroToClasses_CSharp
 
             Console.WriteLine(f.name);
             Console.WriteLine(f.biome);
+            */
 
+            //7. Overloading Constructors
+            /*
+             * Instructions
+            Checkpoint 1 Enabled
+            1.
+            Define a second constructor for the Forest class:
+
+            It should take 1 parameter, name.
+            It should use : this() with the name variable as the first argument and "Unknown" as the second.
+            It should also print a message to the console regarding the use of the default value.
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            In Program.cs, within Main(), call the second constructor to create a Forest object named "Rendlesham".
+
+            Checkpoint 3 Step instruction is unavailable until previous steps are completed
+            3.
+            Below the constructor call, print the biome field of this new instance.
+            When you run the code, you should see the message and "Unknown" printed to the console.Why are these two things printed?
+            */
 
 
         }
