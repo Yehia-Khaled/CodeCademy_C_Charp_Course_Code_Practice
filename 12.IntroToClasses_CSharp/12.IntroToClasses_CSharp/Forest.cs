@@ -29,7 +29,7 @@ namespace _12.IntroToClasses_CSharp
         }
         */
         //5. this: Code solution
-        public string name;
+        /*public string name;
         public int trees;
         public int age;
         public string biome;
@@ -47,6 +47,36 @@ namespace _12.IntroToClasses_CSharp
             age++;
             return trees;
         }
+        */
+
+        //6. Constructors
+        public string name;
+        public int trees;
+        public int age;
+        public string biome;
+
+        public Forest(string name, string biome)
+        {
+            this.name = name;
+            this.biome = biome;
+            age = 1;
+        }
+
+
+        public int Grow()
+        {
+            this.trees += 30;
+            this.age++;
+            return this.trees;
+        }
+
+        public int Burn()
+        {
+            trees -= 20;
+            age++;
+            return trees;
+        }
+
 
     }
 }

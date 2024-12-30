@@ -154,6 +154,14 @@ namespace _12.IntroToClasses_CSharp
             These are no longer needed because those fields are now set by the constructor!
             */
 
+            //Code Solution
+            Forest f = new Forest("Congo", "Tropical");
+            f.trees = 0;
+
+
+            Console.WriteLine(f.name);
+            Console.WriteLine(f.biome);
+
 
 
         }
