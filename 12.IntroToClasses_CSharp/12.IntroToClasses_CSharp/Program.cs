@@ -1,15 +1,4 @@
-﻿using Microsoft.SqlServer.Server;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Reflection;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-
-namespace _12.IntroToClasses_CSharp
+﻿namespace _12.IntroToClasses_CSharp
 {
     internal class Program
     {
@@ -185,6 +174,8 @@ namespace _12.IntroToClasses_CSharp
             When you run the code, you should see the message and "Unknown" printed to the console.Why are these two things printed?
             */
 
+            // Code Solution
+            Forest f2 = new Forest("Rendlesham");
 
         }
     }
