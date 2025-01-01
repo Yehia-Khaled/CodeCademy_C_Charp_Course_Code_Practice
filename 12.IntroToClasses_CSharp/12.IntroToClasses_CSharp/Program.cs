@@ -199,6 +199,8 @@ namespace _12.IntroToClasses_CSharp
 
             Console.WriteLine($"Trees is {f.trees} ");
 
+            Console.WriteLine("End of Lesson (•◡•) ");
+
         }
     }
 }
