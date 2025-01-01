@@ -1,4 +1,4 @@
-﻿using System.Net.NetworkInformation;
+﻿using System;
 
 namespace _12.IntroToClasses_CSharp
 {
@@ -192,6 +192,12 @@ namespace _12.IntroToClasses_CSharp
             Print the trees property again to the console to confirm that the Grow() method works.
             */
 
+            // Code Solution
+            Forest f = new Forest("Amazon");
+
+            f.Grow();
+
+            Console.WriteLine($"Trees is {f.trees} ");
 
         }
     }
