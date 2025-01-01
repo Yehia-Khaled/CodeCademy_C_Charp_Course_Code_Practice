@@ -1,4 +1,6 @@
-﻿namespace _12.IntroToClasses_CSharp
+﻿using System.Net.NetworkInformation;
+
+namespace _12.IntroToClasses_CSharp
 {
     internal class Program
     {
@@ -172,10 +174,24 @@
             3.
             Below the constructor call, print the biome field of this new instance.
             When you run the code, you should see the message and "Unknown" printed to the console.Why are these two things printed?
-            */
+            
 
             // Code Solution
             Forest f2 = new Forest("Rendlesham");
+            */
+
+            //8. Review
+            /*Instructions
+            Checkpoint 1 Failed, try again
+            1.
+            Try out your complete Forest class in Main()!
+
+            Instantiate a new object with the name "Amazon". Store the result in a variable.
+            Print the trees property to the console.
+            Call the Grow() method.
+            Print the trees property again to the console to confirm that the Grow() method works.
+            */
+
 
         }
     }
