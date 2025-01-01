@@ -1,4 +1,6 @@
-﻿namespace _11.Methods_C_
+﻿using System;
+
+namespace _11.Methods_C_
 {
     internal class Program
     {
@@ -116,10 +118,195 @@
              Checkpoint 3 Step instruction is unavailable until previous steps are completed
              3.
              Call the method with the argument "Jupiter" and print its output to the console.
+            
+
+            //Code Solution
+            Console.WriteLine(DecoratePlanet("Jupiter"));
             */
             // Code Solution
 
 
+            //6. Method Overloading 
+            /*//Instructions
+            Checkpoint 1 Enabled
+            1.
+            Let’s practice implementing our own overloads by building a method called IntroduceFriends() with 3 overloads.
+
+            First write a method IntroduceFriends() that takes 2 string arguments.
+
+            If you call it, like:
+
+            IntroduceFriends("Laika", "Albert");
+
+                        Copy to Clipboard
+
+                        it should print a message including the names in the console, like:
+
+            These are my friends, Laika and Albert!
+
+            Copy to Clipboard
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Then write another method IntroduceFriends() that takes 3 string arguments. When you call it:
+
+            IntroduceFriends("Naomi", "Jasmine", "Cyrus");
+
+                        Copy to Clipboard
+
+                        it should print a message including the names in the console, like:
+
+            These are my friends, Naomi, Jasmine, and Cyrus!
+
+            Copy to Clipboard
+
+            Checkpoint 3 Step instruction is unavailable until previous steps are completed
+            3.
+            Add a third IntroduceFriends() method with 0 arguments.When you call it:
+
+            IntroduceFriends();
+                        Copy to Clipboard
+
+                        everyone knows each other, and no one needs an introduction!Print a message like:
+
+                        There is no one who needs to be introduced.
+            
+            // Code Solution
+            IntroduceFriends("Laika", "Albert");
+            IntroduceFriends("Laika", "Albert", "Hany");
+            IntroduceFriends();
+            */
+
+            //7. Out Parameters
+            /*
+             * //Instructions
+            Checkpoint 1 Enabled
+            1.
+            Let’s start by working with another existing method that utilizes an out parameter, Double.TryParse().
+
+            The program in the code editor already defines a variable called scoreAsString, which holds a score(out of 100) as a string.
+
+            To begin, define 2 variables:
+
+                        a bool named outcome, which will store whether or not the string was successfully parsed as a double
+                        a double named scoreAsDouble, which will store the parsed value
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Next, call Double.TryParse() to convert scoreAsString to a double, passing scoreAsDouble as the out argument.Save the result of the function call to the variable outcome.
+
+            The signature for Double.TryParse() looks like:
+
+            public static bool TryParse(string? s, out double result);
+
+                        Copy to Clipboard
+
+                        Checkpoint 3 Step instruction is unavailable until previous steps are completed
+            3.
+            Print outcome and scoreAsDouble to the console.
+
+            Checkpoint 4 Step instruction is unavailable until previous steps are completed
+            4.
+            Now, let’s create a method of our own that uses an out parameter!
+
+            Declare a method Whisper() with a string parameter and out bool parameter. It should return a string.
+
+            Checkpoint 5 Step instruction is unavailable until previous steps are completed
+            5.
+            Whisper() should return a lowercase version of its string argument.
+
+            Once defined, you should be able to call it like:
+
+                        string statement = "Hello World";
+                        Whisper(statement, out bool marker);
+                        // should return  "hello world" and set marker to true;
+
+                        Copy to Clipboard
+
+                        Checkpoint 6 Step instruction is unavailable until previous steps are completed
+            6.
+            Call Whisper() in the Main() method, passing statement as its string argument, then print the returned value to the console.
+
+            Make sure to use an out modifier when calling the method!
+            
+            //Code Solution
+            string scoreAsString = "85.6";
+            string statement = "Hello World";
+
+            double scoreAsDouble;
+            bool outcome;
+
+            outcome = Double.TryParse(scoreAsString, out scoreAsDouble);
+
+            Console.WriteLine($"{outcome}, {scoreAsDouble}");
+
+            string whispered = Whisper(statement, out bool marker);
+            Console.WriteLine(whispered);
+            */
+
+            //8. Optional Parameters
+            /*
+             * Instructions
+            Checkpoint 1 Enabled
+            1.
+            The VisitPlanets() method you created in an earlier exercise is provided in the code editor.
+
+            Update the existing parameter so that it is optional and its default value is 0.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Call the method without the optional parameter in Main().
+            
+
+            //Code Solution
+            VisitPlanets();
+            */
+
+            //9. Named Arguments
+            /*
+             * Instructions
+            Checkpoint 1 Enabled
+            1.
+            The VisitPlanets() method has some new optional parameters.
+
+            First, call the method in Main() with no arguments.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Call the method again, but pass only numberOfPlanets as a named argument with a value of 2.
+
+            Checkpoint 3 Step instruction is unavailable until previous steps are completed
+            3.
+            Call the method one more time, this time passing numberOfPlanets with a value of 2 and name with your name.Both arguments should be passed by name.
+            
+            //Code Solution
+            VisitPlanets(numberOfPlanets: 2);
+            Console.WriteLine("\n\n");
+            VisitPlanets(numberOfPlanets: 2, name: "Yehia");
+            */
+            //10. Review
+            /*
+              //an override of IntroducePet that accepts
+              //an integer "age", which is incorporated into
+              //a more detailed output string
+           
+            // IntroducePet called with one argument
+            // "petType" parameter defaults to "cat"
+            string mittensIntro = IntroducePet("Mittens");
+            Console.WriteLine(mittensIntro);
+
+            // a positional argument is passed to "petType"
+            string franklinIntro = IntroducePet("Franklin", "turtle");
+            Console.WriteLine(franklinIntro);
+
+            // a named argument is passed for "petType"
+            string spotIntro = IntroducePet("Spot", petType: "dog");
+            Console.WriteLine(spotIntro);
+
+            // using the override with "int age"
+            string berthaIntro = IntroducePet("Bertha", 7, "cow");
+            Console.WriteLine(berthaIntro);
+            */
+            Console.WriteLine("End Of lesson");
 
         }
         /*
@@ -134,6 +321,61 @@
         {
             Console.WriteLine($"You visited {numberOfPlanets} new planets...");
         }
+        
+        //5. Return Statement: Code Solution
+        static string DecoratePlanet(string planet)
+        {
+            return $"*..*..* Welcome to {planet} *..*..*";
+        }
+        
+        //6. Method Overloading:Code
+        static void IntroduceFriends(string st1, string st2)
+        {
+            Console.WriteLine($"These are my friends, {st1} and {st2}!");
+        }
+        static void IntroduceFriends(string st1, string st2, string st3)
+        {
+            Console.WriteLine($"These are my friends, {st1} ,{st3} and {st3}!");
+        }
+        static void IntroduceFriends()
+        {
+            Console.WriteLine($"There is no one who needs to be introduced.");
+        }
+        
+        //7. Out Parameters: Code Solution
+        static string Whisper(string phrase, out bool wasWhisperCalled)
+        {
+            wasWhisperCalled = true;
+            return phrase.ToLower();
+        }
+        
+        //8. Optional Parameters: Code Solution
+        static void VisitPlanets(int numberOfPlanets = 0)
+        {
+            Console.WriteLine($"You visited {numberOfPlanets} new planets...");
+        }
+        
+        //9. Named Arguments:Code Solution
+        static void VisitPlanets(
+         string adjective = "brave",
+         string name = "Cosmonaut",
+         int numberOfPlanets = 0,
+         double gForce = 4.2)
+        {
+            Console.WriteLine($"Welcome back, {adjective} {name}.");
+            Console.WriteLine($"You visited {numberOfPlanets} new planets...");
+            Console.WriteLine($"...while experiencing a g-force of {gForce} g!");
+        }
+        
+        //10. Review:Code Solution
+        static string IntroducePet(string name, int age, string petType = "cat")
+        {
+            string introduction = $"This is my {petType}, {name}! {name} is {age} years old!";
+            return introduction;
+        }
         */
+
+
+
     }
 }
