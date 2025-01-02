@@ -7,6 +7,7 @@ using System.Security.AccessControl;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace _13.Encapsulation_Csharp
 {
@@ -37,7 +38,7 @@ namespace _13.Encapsulation_Csharp
             To address this, we’ve already started the definition of a new method, Grow(), within Forest.cs.Remove the 2 lines that update trees and age from Program.cs and add them to the body of the Grow() method. Adjust the code so it references the instance variables instead of the instance f.
 
             Where you removed the code in Program.cs, add a call to the Grow() method.
-            */
+           
 
             //Code Solution
             Forest f = new Forest("Congo", "Tropical");
@@ -47,7 +48,38 @@ namespace _13.Encapsulation_Csharp
             f.Grow();
 
             f.AnnounceForest();
+            */
+
+            //3. Properties
+            /*Instructions
+            Checkpoint 1 Enabled
+            1.
+            Within the Forest class, define a basic Name property for the name field.The getter and setter will have no validation.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            In Forest.cs, update the name field so it can only be accessed within the Forest class.
+
+            In Program.cs, replace any use of the field f.name with the property f.Name.
+
+            Checkpoint 3 Step instruction is unavailable until previous steps are completed
+            3.
+            Back in Forest.cs, define a Biome property for the biome field, with a getter and setter.The setter should only allow three values: "Tropical", "Temperate", and "Boreal". If any other value is used, set biome to "Unknown".
+
+            Update the biome field so it can only be accessed within the Forest class.
+
+            For example, this is how it would work in Program.cs:
+
+            f.Biome = "Tropical";
+            // Prints Tropical
+            Console.WriteLine(f.Biome); 
+
+            f.Biome = "Desert";
+            // Prints Unknown
+            Console.WriteLine(f.Biome); 
+            */
+
 
         }
-    }
+}
 }
