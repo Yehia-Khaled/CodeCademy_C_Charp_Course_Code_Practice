@@ -39,6 +39,14 @@ namespace _13.Encapsulation_Csharp
             Where you removed the code in Program.cs, add a call to the Grow() method.
             */
 
+            //Code Solution
+            Forest f = new Forest("Congo", "Tropical");
+            f.AnnounceForest();
+
+
+            f.Grow();
+
+            f.AnnounceForest();
 
         }
     }
