@@ -77,7 +77,7 @@ namespace _13.Encapsulation_Csharp
             f.Biome = "Desert";
             // Prints Unknown
             Console.WriteLine(f.Biome); 
-            */
+            
 
             //Code Solution
             Forest f = new Forest();
@@ -88,6 +88,21 @@ namespace _13.Encapsulation_Csharp
 
             Console.WriteLine(f.Name);
             Console.WriteLine($"biome name is {f.Biome}");
+            */
+
+
+            //4. Auto-Implemented Properties
+            /* Instructions
+             Checkpoint 1 Enabled
+             1.
+             We have defined basic fields and properties for name and trees in the code editor.
+
+             Replace the current name field and Name property with an auto - implemented Name property.
+
+             Checkpoint 2 Step instruction is unavailable until previous steps are completed
+             2.
+             Replace the current trees field and Trees property with an automatic Trees property.
+            */
 
         }
     }

@@ -35,7 +35,7 @@ namespace _13.Encapsulation_Csharp
         */
 
         //3. Properties: Code Solution
-        private string name;
+        /*private string name;
         public int trees;
         public int age;
         private string biome;
@@ -61,5 +61,7 @@ namespace _13.Encapsulation_Csharp
                     biome = "Unknown";
             }
         }
+        */
+
     }
 }
