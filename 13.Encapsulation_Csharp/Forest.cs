@@ -63,5 +63,42 @@ namespace _13.Encapsulation_Csharp
         }
         */
 
+        //4. Auto-Implemented Properties :Code Solution
+        public string Name
+        {
+            get; set;
+        }
+
+
+        public int Trees
+        {
+            get; set;
+        }
+
+        public int age;
+
+        private string biome;
+        public string Biome
+        {
+            get
+            {
+                return biome;
+            }
+            set
+            {
+                string[] validBiomes = { "Tropical", "Temperate", "Boreal" };
+                if (Array.IndexOf(validBiomes, value) >= 0)
+                {
+                    biome = value;
+                }
+                else
+                {
+                    biome = "Unknown";
+                }
+            }
+
+        }
+
+
     }
 }

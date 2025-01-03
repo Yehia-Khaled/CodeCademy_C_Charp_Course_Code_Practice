@@ -104,6 +104,15 @@ namespace _13.Encapsulation_Csharp
              Replace the current trees field and Trees property with an automatic Trees property.
             */
 
+            //Code Solution 
+            Forest f = new Forest();
+            f.Name = "Congo";
+            f.Trees = 0;
+            f.age = 0;
+            f.Biome = "Tropical";
+
+            Console.WriteLine(f.Name);
+
         }
     }
 }
