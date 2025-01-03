@@ -79,7 +79,16 @@ namespace _13.Encapsulation_Csharp
             Console.WriteLine(f.Biome); 
             */
 
+            //Code Solution
+            Forest f = new Forest();
+            f.Name = "Congo";
+            f.trees = 0;
+            f.age = 0;
+            f.Biome = "Tropical";
+
+            Console.WriteLine(f.Name);
+            Console.WriteLine($"biome name is {f.Biome}");
 
         }
-}
+    }
 }
