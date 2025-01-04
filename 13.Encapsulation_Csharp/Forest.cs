@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace _13.Encapsulation_Csharp
 {
@@ -137,7 +138,115 @@ namespace _13.Encapsulation_Csharp
         */
 
         //6. Static Fields and Properties
-        //Code Solution
+        /*
+         *Instructions
+            Checkpoint 1 Enabled
+            1.
+            We’ve filled out properties, constructors, and methods for the Forest class. Review the code in the editor and ensure you understand how the code works.
+
+            Let’s create a static property on the Forest class to keep track of the total number of forests created.Define a public static property named ForestsCreated with a public getter and a private setter.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            In the first constructor, increment ForestsCreated.This will add 1 to the property every time a Forest object is constructed.
+           
+         * //Code Solution
+         // FIELDS/PROPERTIES
+         public string Name
+         { get; set; }
+
+         public int Trees
+         { get; set; }
+
+         private int age;
+         public int Age
+         {
+             get { return age; }
+             private set
+             {
+                 if (value < 0)
+                 {
+                     age = 0;
+                 }
+                 else
+                 {
+                     age = value;
+                 }
+             }
+         }
+
+         public static int ForestsCreated
+         {
+             get;
+             private set;
+         }
+
+         private string biome;
+         public string Biome
+         {
+             get { return biome; }
+             set
+             {
+                 string[] validBiomes = { "Tropical", "Temperate", "Boreal" };
+                 if (Array.IndexOf(validBiomes, value) >= 0)
+                 {
+                     biome = value;
+                 }
+                 else
+                 {
+                     biome = "Unknown";
+                 }
+             }
+         }
+
+         // CONSTRUCTORS
+         public Forest(string name, string biome)
+         {
+             Name = name;
+             Biome = biome;
+             Age = 0;
+             Forest.ForestsCreated++;
+         }
+
+         public Forest(string name) : this(name, "Unknown")
+         { }
+
+
+         // METHODS
+         public int Grow()
+         {
+             Trees += 30;
+             Age += 1;
+             return Trees;
+         }
+
+         public int Burn()
+         {
+             Trees -= 20;
+             Age += 1;
+             return Trees;
+         }
+         */
+
+        //7. Static Methods
+        /* Instructions
+         Checkpoint 1 Enabled
+         1.
+         Let’s create a method that outputs some information about forests in general.We’ll use a field and property to store the explanation.
+
+         Start by defining a private static string field named forestFacts.Do not initialize forestFacts with a value.
+
+         Checkpoint 2 Step instruction is unavailable until previous steps are completed
+         2.
+         Next, define a private static property named ForestFacts with just a getter(no setter). Do not initialize ForestFacts with a value either.
+
+         Checkpoint 3 Step instruction is unavailable until previous steps are completed
+         3.
+         Finally, define a public static method named PrintForestFacts() that writes the value of ForestFacts to the console.
+
+         Note that ForestFacts is never assigned a value — we’ll address this in the next exercise.
+        */
+        //code Solution
         // FIELDS/PROPERTIES
         public string Name
         { get; set; }
@@ -162,12 +271,6 @@ namespace _13.Encapsulation_Csharp
             }
         }
 
-        public static int ForestsCreated
-        {
-            get;
-            private set;
-        }
-
         private string biome;
         public string Biome
         {
@@ -186,13 +289,27 @@ namespace _13.Encapsulation_Csharp
             }
         }
 
+        public static int ForestsCreated
+        {
+            get; private set;
+        }
+
+        private static string forestFacts;
+        private static string ForestFacts
+        {
+            get
+            {
+                return forestFacts;
+            }
+        }
+
         // CONSTRUCTORS
         public Forest(string name, string biome)
         {
             Name = name;
             Biome = biome;
             Age = 0;
-            Forest.ForestsCreated++;
+            ForestsCreated++;
         }
 
         public Forest(string name) : this(name, "Unknown")
@@ -213,6 +330,12 @@ namespace _13.Encapsulation_Csharp
             Age += 1;
             return Trees;
         }
+
+        public static void PrintForestFacts()
+        {
+            Console.WriteLine(ForestFacts);
+        }
+
     }
 
 
