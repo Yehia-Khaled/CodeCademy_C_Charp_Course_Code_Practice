@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Runtime.Remoting.Contexts;
 using System.Security.AccessControl;
 using System.Security.Policy;
 using System.Text;
@@ -102,7 +103,7 @@ namespace _13.Encapsulation_Csharp
              Checkpoint 2 Step instruction is unavailable until previous steps are completed
              2.
              Replace the current trees field and Trees property with an automatic Trees property.
-            */
+            
 
             //Code Solution 
             Forest f = new Forest();
@@ -112,6 +113,31 @@ namespace _13.Encapsulation_Csharp
             f.Biome = "Tropical";
 
             Console.WriteLine(f.Name);
+            */
+
+            //5. Get-Only Properties
+            /*Instructions
+            Checkpoint 1 Enabled
+            1.
+            In Forest.cs, define an Age property for the age field.It should have a public getter and a private setter.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            In Program.cs, within the Main() method, try to set the value of f.Age.You should see an error:
+
+            error CS0272: The property or indexer 'Forest.Age' cannot be used in this context because the set accessor is inaccessible
+
+            Copy to Clipboard
+
+            This error means that the private setter prevented us from setting Age outside of the class (which is good!).
+            */
+
+            //Code Solution 
+            Forest f = new Forest();
+            f.Name = "Congo";
+            f.Trees = 0;
+            f.Biome = "Tropical";
+            f.Age = 15;
 
         }
     }
