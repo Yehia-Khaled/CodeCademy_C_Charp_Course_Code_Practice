@@ -245,7 +245,7 @@ namespace _13.Encapsulation_Csharp
          Finally, define a public static method named PrintForestFacts() that writes the value of ForestFacts to the console.
 
          Note that ForestFacts is never assigned a value — we’ll address this in the next exercise.
-        */
+        
         //code Solution
         // FIELDS/PROPERTIES
         public string Name
@@ -335,6 +335,34 @@ namespace _13.Encapsulation_Csharp
         {
             Console.WriteLine(ForestFacts);
         }
+        */
+
+        //8. Static Constructors
+        /* Instructions
+         Checkpoint 1 Enabled
+         1.
+         In the previous exercises, our forestsCreated and forestFacts fields were never given starting values! Let’s fix that.
+
+         First, create a static constructor for Forest.
+
+         Checkpoint 2 Step instruction is unavailable until previous steps are completed
+         2.
+         In the body of the static constructor, set the forestFacts field to this string:
+
+         "Forests provide a diversity of ecosystem services including:\n\taiding in regulating climate.\n\tpurifying water.\n\tmitigating natural hazards such as floods.\n"
+
+         Copy to Clipboard
+
+         Checkpoint 3 Step instruction is unavailable until previous steps are completed
+         3.
+         Also, within the body of the static constructor, set the ForestsCreated property to 0.
+
+         Checkpoint 4 Step instruction is unavailable until previous steps are completed
+         4.
+         In Program.cs, call Forest.PrintForestFacts() to check that the ForestFacts property was set.
+
+         */
+
 
     }
 
