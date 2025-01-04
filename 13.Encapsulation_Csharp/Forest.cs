@@ -100,7 +100,7 @@ namespace _13.Encapsulation_Csharp
         }
         */
         //5. Get-Only Properties : Code solution
-        private int age;
+        /*private int age;
 
         public int Age
         {
@@ -134,6 +134,10 @@ namespace _13.Encapsulation_Csharp
                 }
             }
         }
+        */
+
+        //6. Static Fields and Properties
+
     }
 
 

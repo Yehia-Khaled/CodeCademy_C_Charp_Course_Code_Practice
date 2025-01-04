@@ -130,7 +130,7 @@ namespace _13.Encapsulation_Csharp
             Copy to Clipboard
 
             This error means that the private setter prevented us from setting Age outside of the class (which is good!).
-            */
+            
 
             //Code Solution 
             Forest f = new Forest();
@@ -138,6 +138,21 @@ namespace _13.Encapsulation_Csharp
             f.Trees = 0;
             f.Biome = "Tropical";
             f.Age = 15;
+            */
+
+
+            //6. Static Fields and Properties
+            /*Instructions
+            Checkpoint 1 Enabled
+            1.
+            We’ve filled out properties, constructors, and methods for the Forest class. Review the code in the editor and ensure you understand how the code works.
+
+            Let’s create a static property on the Forest class to keep track of the total number of forests created.Define a public static property named ForestsCreated with a public getter and a private setter.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            In the first constructor, increment ForestsCreated.This will add 1 to the property every time a Forest object is constructed.
+            */
 
         }
     }
