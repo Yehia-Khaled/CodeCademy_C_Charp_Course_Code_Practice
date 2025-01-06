@@ -361,7 +361,7 @@ namespace _13.Encapsulation_Csharp
          4.
          In Program.cs, call Forest.PrintForestFacts() to check that the ForestFacts property was set.
 
-         */
+        
 
         //Code Solution 
         // FIELDS/PROPERTIES
@@ -458,6 +458,8 @@ namespace _13.Encapsulation_Csharp
         {
             Console.WriteLine(ForestFacts);
         }
+         */
+
 
 
     }

@@ -158,7 +158,22 @@ namespace _13.Encapsulation_Csharp
             // in Forest.cs
 
             //8. Static Constructors: Code solution
-            Forest.PrintForestFacts();
+            //Forest.PrintForestFacts();
+
+
+            //9. Static Classes
+            /*
+             * Instructions
+            Checkpoint 1 Enabled
+            1.
+            We rarely create static classes of our own, so let’s practice using other static classes.First, print the value of pi(a commonly-used value in geometry) which is stored in Math.PI.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Find the absolute value of - 32 using the method Math.Abs(), then print the result to the console.
+            */
+
+
 
         }
     }
