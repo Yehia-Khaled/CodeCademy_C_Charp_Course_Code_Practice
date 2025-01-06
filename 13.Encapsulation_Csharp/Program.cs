@@ -157,7 +157,8 @@ namespace _13.Encapsulation_Csharp
             //Code Solution 
             // in Forest.cs
 
-
+            //8. Static Constructors: Code solution
+            Forest.PrintForestFacts();
 
         }
     }
