@@ -54,7 +54,20 @@ namespace _14.Inheritance_Csharp
 
              Remove all of the inherited members from Sedan.cs.You will still see errors regarding Sedan accessing members that it is not allowed to — that’s okay! We’ll fix those in the next exercise.
              */
+            Sedan s = new Sedan(60);
+            Console.WriteLine($"Sedan with license plate {s.LicensePlate} and {s.Wheels} wheels, driving at {s.Speed} km/h.");
+            s.SpeedUp();
+            Console.WriteLine($"Sedan's faster speed: {s.Speed}");
 
+            Truck t = new Truck(45, 500);
+            Console.WriteLine($"Truck with license plate {t.LicensePlate} and {t.Wheels} wheels, driving at {t.Speed} km/h.");
+            t.SpeedUp();
+            Console.WriteLine($"Truck's faster speed: {t.Speed}");
+
+            Bicycle b = new Bicycle(10);
+            Console.WriteLine($"Bicycle with {b.Wheels} wheels, driving at {b.Speed} km/h.");
+            b.SpeedUp();
+            Console.WriteLine($"Biclycle's faster speed: {b.Speed}");
 
         }
     }
