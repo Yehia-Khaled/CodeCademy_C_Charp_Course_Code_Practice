@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.VisualStudio.Services.Graph.GraphResourceIds;
 
 namespace _14.Inheritance_Csharp
 {
     internal class Vehicle
     {
         //3. Create a Superclass
-        public string LicensePlate
+        /*
+         * public string LicensePlate
         {
             get;
         }
@@ -38,6 +40,20 @@ namespace _14.Inheritance_Csharp
         {
             Speed -= 5;
         }
+        */
+
+        //4. Access Inherited Members with Protected
+        /*Instructions
+        Checkpoint 1 Enabled
+        1.
+        In Vehicle, add a protected setter to each of these properties:
+
+        LicensePlate
+        Speed(update from private to protected)
+        Wheels
+        */
+
+
 
     }
 }
