@@ -44,11 +44,20 @@ namespace _14.Inheritance_Csharp
 
         */
         //3. Create a Superclass
-        //Code Solution
+        /*
+         * //Code Solution
         public Sedan(double speed)
         {
             Speed = speed;
             LicensePlate = Tools.GenerateLicensePlate();
+            Wheels = 4;
+        }
+        */
+
+        //6. Access Inherited Members with Base
+        public Sedan(double speed) : base(speed)
+        {
+
             Wheels = 4;
         }
     }

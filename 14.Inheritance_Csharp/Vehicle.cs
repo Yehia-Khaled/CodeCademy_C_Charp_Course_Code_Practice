@@ -1,4 +1,5 @@
 ﻿using Accord.Collections;
+using Accord.Math;
 using Microsoft.VisualStudio.Services.Client.AccountManagement.Logging;
 using Newtonsoft.Json.Linq;
 using System;
@@ -119,6 +120,36 @@ namespace _14.Inheritance_Csharp
         4.
         Since the LicensePlate and Speed properties defined in Vehicle are no longer accessed in Sedan or Truck, they no longer need to be protected. Switch those two setters to private.
         */
+        // Code Solution
+        public string LicensePlate
+        { get; private set; }
+
+        public double Speed
+        { get; private set; }
+
+        public int Wheels
+        { get; protected set; }
+
+        public Vehicle(double speed)
+        {
+            Speed = speed;
+            LicensePlate = Tools.GenerateLicensePlate();
+        }
+
+        public void SpeedUp()
+        {
+            Speed += 5;
+        }
+
+        public void SlowDown()
+        {
+            Speed -= 5;
+        }
+
+        public void Honk()
+        {
+            Console.WriteLine("HONK!");
+        }
 
 
     }
