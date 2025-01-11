@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace _14.Inheritance_Csharp
 {
-    internal class Sedan
+    internal class Sedan : Vehicle
     {
         //1. Introduction to Inheritance
-        public string LicensePlate
+        /*public string LicensePlate
         { get; }
 
         public double Speed
@@ -41,6 +41,17 @@ namespace _14.Inheritance_Csharp
         {
             Speed -= 5;
         }
+
+        */
+        //3. Create a Superclass
+        //Code Solution
+        public Sedan(double speed)
+        {
+            Speed = speed;
+            LicensePlate = Tools.GenerateLicensePlate();
+            Wheels = 4;
+        }
     }
+
 
 }
