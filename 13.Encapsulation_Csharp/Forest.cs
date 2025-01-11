@@ -473,7 +473,7 @@ namespace _13.Encapsulation_Csharp
         Checkpoint 3 Step instruction is unavailable until previous steps are completed
         3.
         Print the number of forests created again.Before moving on, make sure you can explain how this value was changed.
-        */
+         
         //Code Solution
 
         // FIELDS/PROPERTIES
@@ -572,7 +572,7 @@ namespace _13.Encapsulation_Csharp
             Console.WriteLine(ForestFacts);
         }
 
-
+        */
     }
 
 
