@@ -460,6 +460,20 @@ namespace _13.Encapsulation_Csharp
         }
          */
 
+        //10.Review
+        /*Instructions
+        Checkpoint 1 Enabled
+        1.
+        From Program.cs, print the number of forests created.
+
+        Checkpoint 2 Step instruction is unavailable until previous steps are completed
+        2.
+        Instantiate two Forest objects.
+
+        Checkpoint 3 Step instruction is unavailable until previous steps are completed
+        3.
+        Print the number of forests created again.Before moving on, make sure you can explain how this value was changed.
+        */
 
 
     }
