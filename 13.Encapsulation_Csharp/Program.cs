@@ -172,8 +172,9 @@ namespace _13.Encapsulation_Csharp
             2.
             Find the absolute value of - 32 using the method Math.Abs(), then print the result to the console.
             */
-
-
+            //Code Solution
+            Console.WriteLine(Math.PI);
+            Console.WriteLine(Math.Abs(-32));
 
         }
     }
