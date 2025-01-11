@@ -193,6 +193,14 @@ namespace _13.Encapsulation_Csharp
             Print the number of forests created again.Before moving on, make sure you can explain how this value was changed.
             */
 
+            //Code Solution
+
+            Console.WriteLine(Forest.ForestsCreated);
+
+            Forest f1 = new Forest("Amazon", "Tropical");
+            Forest f2 = new Forest("Congo");
+
+            Console.WriteLine(Forest.ForestsCreated);
 
         }
     }
