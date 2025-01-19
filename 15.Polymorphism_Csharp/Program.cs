@@ -14,32 +14,61 @@ namespace _15.Polymorphism_Csharp
 {
     internal class Program
     {
-        class Animal
+        /* //1. Introduction to Polymorphism
+         * class Animal
+         {
+             public virtual void MakeSound()
+             {
+                 Console.WriteLine("Animal makes a sound.");
+             }
+         }
+
+
+
+         class Dog : Animal
+         {
+             public override void MakeSound()
+             {
+                 Console.WriteLine("Dog barks.");
+             }
+         }
+
+         // Define the Cat class here
+         class Cat : Animal
+         {
+             public override void MakeSound()
+             {
+                 Console.WriteLine("Cat meows.");
+             }
+         }
+        */
+
+        //2. Understanding Virtual Methods and Overriding Methods
+        public class Employee
         {
-            public virtual void MakeSound()
+            public virtual void MakeHRRequest()
             {
-                Console.WriteLine("Animal makes a sound.");
+                Console.WriteLine("Employee makes an HR request.");
+            }
+        }
+
+        public class Manager : Employee
+        {
+            public override void MakeHRRequest()
+            {
+                Console.WriteLine("Manager makes an HR request.");
+            }
+        }
+
+        public class Engineer : Employee
+        {
+            public override void MakeHRRequest()
+            {
+                Console.WriteLine("Engineer makes an HR request.");
             }
         }
 
 
-
-        class Dog : Animal
-        {
-            public override void MakeSound()
-            {
-                Console.WriteLine("Dog barks.");
-            }
-        }
-
-        // Define the Cat class here
-        class Cat : Animal
-        {
-            public override void MakeSound()
-            {
-                Console.WriteLine("Cat meows.");
-            }
-        }
         static void Main(string[] args)
         {
             //Lesson 15. C#: Polymorphism
@@ -87,6 +116,12 @@ namespace _15.Polymorphism_Csharp
             Lastly, inside the Main() method, create an instance of Engineer called, engineer1. Using the instance inside engineer1 variable, call MakeHRRequest().
             */
 
+            //Code Solution
+            Manager manager1 = new Manager();
+            manager1.MakeHRRequest();
+
+            Engineer engineer1 = new Engineer();
+            engineer1.MakeHRRequest();
 
         }
 
