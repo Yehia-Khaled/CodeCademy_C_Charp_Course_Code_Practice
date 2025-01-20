@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -114,7 +115,7 @@ namespace _15.Polymorphism_Csharp
             Checkpoint 4 Step instruction is unavailable until previous steps are completed
             4.
             Lastly, inside the Main() method, create an instance of Engineer called, engineer1. Using the instance inside engineer1 variable, call MakeHRRequest().
-            */
+            
 
             //Code Solution
             Manager manager1 = new Manager();
@@ -122,6 +123,25 @@ namespace _15.Polymorphism_Csharp
 
             Engineer engineer1 = new Engineer();
             engineer1.MakeHRRequest();
+            */
+
+            //3. Upcasting Objects
+            /*Instructions
+            Checkpoint 1 Enabled
+            1.
+            In the Main method, create a Manager object named myManager.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            In the Program class, upcast the Manager object myManager to an Employee reference named myEmployeeManager.
+
+            Checkpoint 3 Step instruction is unavailable until previous steps are completed
+            3.
+            Now call MakeHRRequest() using the myEmployeeManager object. Even though the calling object is of type Employee, the output is that of the overridden method in the Manager class.
+            */
+
+
+
 
         }
 
