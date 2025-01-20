@@ -8,6 +8,7 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static _15.Polymorphism_Csharp.Program;
 using static System.Collections.Specialized.BitVector32;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -213,13 +214,34 @@ namespace _15.Polymorphism_Csharp
             Checkpoint 2 Step instruction is unavailable until previous steps are completed
             2.
             Now use myManager to call the MoveToOffice() method.
-            */
+            
             //Code Solution
             Employee myEmployeeManager = new Manager();
             // Your code below
             Manager myManager = (Manager)myEmployeeManager;
 
             myManager.MoveToOffice();
+            */
+
+            // 5.Using 'is' Operators
+            /*Instructions
+            Checkpoint 1 Enabled
+            1.
+            In the Main method, define a variable myEmployee and set it to an upcast new Engineer object.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Now inside a Console.WriteLine() statement, output the result of using the is operator to check if myEmployee can be cast to an Engineer.
+
+            Be sure to not print anything other than the result of the is operation.
+
+            Checkpoint 3 Step instruction is unavailable until previous steps are completed
+            3.
+            Inside another Console.WriteLine() statement, output the result of using the is operator to check if myEmployee can be cast to a Manager.
+
+            Be sure to not print anything other than the result of the is operation.
+            */
+
 
         }
 
