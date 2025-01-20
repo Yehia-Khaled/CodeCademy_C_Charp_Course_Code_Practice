@@ -100,6 +100,29 @@ namespace _15.Polymorphism_Csharp
         }
         */
 
+        //4. Downcasting Objects
+        public class Employee
+        {
+            public virtual void MakeHRRequest()
+            {
+                Console.WriteLine("Employee makes an HR request.");
+            }
+        }
+
+        public class Manager : Employee
+        {
+            public override void MakeHRRequest()
+            {
+                Console.WriteLine("Manager makes an HR request.");
+            }
+
+            public void MoveToOffice()
+            {
+                Console.WriteLine("Manager moves to office.");
+            }
+        }
+
+
 
         static void Main(string[] args)
         {
@@ -191,7 +214,12 @@ namespace _15.Polymorphism_Csharp
             2.
             Now use myManager to call the MoveToOffice() method.
             */
+            //Code Solution
+            Employee myEmployeeManager = new Manager();
+            // Your code below
+            Manager myManager = (Manager)myEmployeeManager;
 
+            myManager.MoveToOffice();
 
         }
 
