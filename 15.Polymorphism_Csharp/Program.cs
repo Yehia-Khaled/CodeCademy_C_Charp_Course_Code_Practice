@@ -45,7 +45,7 @@ namespace _15.Polymorphism_Csharp
         */
 
         //2. Understanding Virtual Methods and Overriding Methods
-        public class Employee
+        /*public class Employee
         {
             public virtual void MakeHRRequest()
             {
@@ -66,6 +66,36 @@ namespace _15.Polymorphism_Csharp
             public override void MakeHRRequest()
             {
                 Console.WriteLine("Engineer makes an HR request.");
+            }
+        }
+        */
+
+        //3. Upcasting Objects
+        //Code Solution
+        public class Employee
+        {
+            // Virtual method in the base class
+            public virtual void MakeHRRequest()
+            {
+                Console.WriteLine("Employee makes an HR request.");
+            }
+        }
+
+        public class Engineer : Employee
+        {
+            // Override the virtual method in the derived class
+            public override void MakeHRRequest()
+            {
+                Console.WriteLine("Engineer makes an HR request.");
+            }
+        }
+
+        public class Manager : Employee
+        {
+            // Override the virtual method in the derived class
+            public override void MakeHRRequest()
+            {
+                Console.WriteLine("Manager makes an HR request.");
             }
         }
 
@@ -140,6 +170,12 @@ namespace _15.Polymorphism_Csharp
             Now call MakeHRRequest() using the myEmployeeManager object. Even though the calling object is of type Employee, the output is that of the overridden method in the Manager class.
             */
 
+            //Code Solution
+            Manager myManager = new Manager();
+
+            Employee myEmployeeManager = myManager;
+
+            myEmployeeManager.MakeHRRequest();
 
 
 
