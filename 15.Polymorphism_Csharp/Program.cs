@@ -71,7 +71,7 @@ namespace _15.Polymorphism_Csharp
         */
 
         //3. Upcasting Objects
-        //Code Solution
+        /*//Code Solution
         public class Employee
         {
             // Virtual method in the base class
@@ -98,6 +98,7 @@ namespace _15.Polymorphism_Csharp
                 Console.WriteLine("Manager makes an HR request.");
             }
         }
+        */
 
 
         static void Main(string[] args)
@@ -168,7 +169,7 @@ namespace _15.Polymorphism_Csharp
             Checkpoint 3 Step instruction is unavailable until previous steps are completed
             3.
             Now call MakeHRRequest() using the myEmployeeManager object. Even though the calling object is of type Employee, the output is that of the overridden method in the Manager class.
-            */
+            
 
             //Code Solution
             Manager myManager = new Manager();
@@ -176,7 +177,20 @@ namespace _15.Polymorphism_Csharp
             Employee myEmployeeManager = myManager;
 
             myEmployeeManager.MakeHRRequest();
+            */
 
+            //4. Downcasting Objects
+            /*Instructions
+            Checkpoint 1 Enabled
+            1.
+            In the Program class, a Manager object is upcast to an Employee object called myEmployeeManager.
+
+            Right below that line of code, define myManager of type Manager and set the variable’s value to a downcast myEmployeeManager.
+
+            Checkpoint 2 Step instruction is unavailable until previous steps are completed
+            2.
+            Now use myManager to call the MoveToOffice() method.
+            */
 
 
         }
