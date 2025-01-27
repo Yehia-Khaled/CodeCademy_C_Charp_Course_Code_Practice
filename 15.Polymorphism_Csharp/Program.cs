@@ -8,9 +8,9 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using static _15.Polymorphism_Csharp.Program;
 using static System.Collections.Specialized.BitVector32;
 using static System.Net.Mime.MediaTypeNames;
+using static _15.Polymorphism_Csharp.Program;
 
 namespace _15.Polymorphism_Csharp
 {
@@ -102,7 +102,7 @@ namespace _15.Polymorphism_Csharp
         */
 
         //4. Downcasting Objects
-        public class Employee
+        /*public class Employee
         {
             public virtual void MakeHRRequest()
             {
@@ -120,6 +120,36 @@ namespace _15.Polymorphism_Csharp
             public void MoveToOffice()
             {
                 Console.WriteLine("Manager moves to office.");
+            }
+        }
+
+        */
+        //5.Using 'is' Operators
+        //Code Solution
+        public class Employee
+        {
+            // Virtual method in the base class
+            public virtual void MakeHRRequest()
+            {
+                Console.WriteLine("Employee makes an HR request.");
+            }
+        }
+
+        public class Engineer : Employee
+        {
+            // Override the virtual method in the derived class
+            public override void MakeHRRequest()
+            {
+                Console.WriteLine("Engineer makes an HR request.");
+            }
+        }
+
+        public class Manager : Employee
+        {
+            // Override the virtual method in the derived class
+            public override void MakeHRRequest()
+            {
+                Console.WriteLine("Manager makes an HR request.");
             }
         }
 
@@ -242,6 +272,10 @@ namespace _15.Polymorphism_Csharp
             Be sure to not print anything other than the result of the is operation.
             */
 
+            //Code Solution
+            Employee myEmployee = new Engineer();
+            Console.WriteLine(myEmployee is Engineer);
+            Console.WriteLine(myEmployee is Manager);
 
         }
 
